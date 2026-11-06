@@ -1,0 +1,20 @@
+02:49:28.533 INFO  msedge-desktop-8eafd976 logger initialised for "msedge-desktop-8eafd976"
+02:49:28.533 INFO  msedge-desktop-8eafd976 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:28.643 INFO  msedge-desktop-8eafd976 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:28.644 INFO  msedge-desktop-8eafd976 opening job search {"url":"/jobs/"}
+02:49:28.728 INFO  msedge-desktop-8eafd976 results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:28.729 INFO  msedge-desktop-8eafd976 searching jobs {"keyword":"QA Automation Engineer"}
+02:49:28.785 INFO  msedge-desktop-8eafd976 results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer"}
+02:49:28.785 INFO  msedge-desktop-8eafd976 opening job {"title":"Senior QA Automation Engineer"}
+02:49:28.851 INFO  msedge-desktop-8eafd976 job detail loaded {"title":"Senior QA Automation Engineer","url":"http://127.0.0.1:4321/jobs/view/1001"}
+02:49:28.857 INFO  msedge-desktop-8eafd976 clicking Easy Apply {"title":"Senior QA Automation Engineer"}
+02:49:29.077 INFO  msedge-desktop-8eafd976 Easy Apply modal opened {"header":"Apply to Acme Cloud"}
+02:49:29.101 INFO  msedge-desktop-8eafd976 filled field {"label":"First name","value":"Alice"}
+02:49:29.116 INFO  msedge-desktop-8eafd976 filled field {"label":"Last name","value":"Chen"}
+02:49:29.128 INFO  msedge-desktop-8eafd976 filled field {"label":"Email address","value":"alice.qa@example.com"}
+02:49:29.135 INFO  msedge-desktop-8eafd976 clicking Next {"label":"Next"}
+02:49:29.547 INFO  msedge-desktop-8eafd976 resume upload attempted {"name":"alice-chen-resume.pdf","attached":true}
+02:49:29.552 STEP  msedge-desktop-8eafd976 [removing the resume re-disables the footer button] ▶ removing the resume re-disables the footer button {"stepIndex":1}
+02:49:29.647 STEP  msedge-desktop-8eafd976 [removing the resume re-disables the footer button] ✔ removing the resume re-disables the footer button (95 ms) {"stepIndex":1}
+02:49:29.672 INFO  msedge-desktop-8eafd976 screenshot captured: artifacts/evidence/msedge-desktop/mock-easy-apply-validation-rules-and-button-state-clearing-t/01-next-disabled-after-clear.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:29.711 INFO  msedge-desktop-8eafd976 test finished {"scope":"msedge-desktop-8eafd976","durationMs":1178,"steps":[{"index":1,"name":"removing the resume re-disables the footer button","startedAt":1793933369552,"status":"passed","durationMs":95}],"log":"/home/user/workspace/artifacts/test-results/mock-validation--mock-Easy-23c5b-locks-the-Next-button-again-msedge-desktop/logs/msedge-desktop-8eafd976-2026-11-06T02-49-28-533Z.log"}

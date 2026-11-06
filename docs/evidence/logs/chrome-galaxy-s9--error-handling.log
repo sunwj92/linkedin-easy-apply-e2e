@@ -1,0 +1,4 @@
+02:49:22.156 INFO  chrome-galaxy-s9-a6760a88 logger initialised for "chrome-galaxy-s9-a6760a88"
+02:49:22.158 INFO  chrome-galaxy-s9-a6760a88 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:22.371 INFO  chrome-galaxy-s9-a6760a88 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:23.893 INFO  chrome-galaxy-s9-a6760a88 test finished {"scope":"chrome-galaxy-s9-a6760a88","durationMs":1737,"steps":[],"log":"/home/user/workspace/artifacts/test-results/mock-error-handling--mock--4f97b--as-an-authentication-error-chrome-galaxy-s9/logs/chrome-galaxy-s9-a6760a88-2026-11-06T02-49-22-156Z.log"}

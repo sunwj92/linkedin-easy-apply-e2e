@@ -1,0 +1,4 @@
+02:49:27.037 INFO  msedge-desktop-a6760a88 logger initialised for "msedge-desktop-a6760a88"
+02:49:27.040 INFO  msedge-desktop-a6760a88 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:27.358 INFO  msedge-desktop-a6760a88 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:28.521 INFO  msedge-desktop-a6760a88 test finished {"scope":"msedge-desktop-a6760a88","durationMs":1485,"steps":[],"log":"/home/user/workspace/artifacts/test-results/mock-error-handling--mock--4f97b--as-an-authentication-error-msedge-desktop/logs/msedge-desktop-a6760a88-2026-11-06T02-49-27-036Z.log"}

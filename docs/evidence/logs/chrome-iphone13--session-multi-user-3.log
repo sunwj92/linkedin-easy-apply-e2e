@@ -1,0 +1,7 @@
+02:49:20.681 INFO  chrome-iphone13-7d2d9174 logger initialised for "chrome-iphone13-7d2d9174"
+02:49:20.773 INFO  chrome-iphone13-7d2d9174 opening login page {"url":"/login"}
+02:49:20.798 INFO  chrome-iphone13-7d2d9174 submitting credentials {"email":"alice.qa@example.com","mode":"mock"}
+02:49:20.906 INFO  chrome-iphone13-7d2d9174 login succeeded {"url":"http://127.0.0.1:4321/jobs"}
+02:49:20.909 INFO  chrome-iphone13-7d2d9174 storage state persisted {"path":"/var/folders/8k/8h271xh536jd_8f7hzmbwx8m0000gn/T/linkedin-e2e-fresh-1793933360681-ed7f44fe27ca78.json"}
+02:49:20.928 INFO  chrome-iphone13-7d2d9174 fallback login persisted a new storage state {"path":"/var/folders/8k/8h271xh536jd_8f7hzmbwx8m0000gn/T/linkedin-e2e-fresh-1793933360681-ed7f44fe27ca78.json"}
+02:49:20.994 INFO  chrome-iphone13-7d2d9174 test finished {"scope":"chrome-iphone13-7d2d9174","durationMs":314,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-a6333-sts-it-when-no-state-exists-chrome-iphone13/logs/chrome-iphone13-7d2d9174-2026-11-06T02-49-20-681Z.log"}

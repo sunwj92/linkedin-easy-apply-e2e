@@ -1,0 +1,66 @@
+02:49:16.374 INFO  chrome-iphone13-21223cf2 logger initialised for "chrome-iphone13-21223cf2"
+02:49:16.376 INFO  chrome-iphone13-21223cf2 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:16.559 INFO  chrome-iphone13-21223cf2 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:16.559 STEP  chrome-iphone13-21223cf2 [open job search with a persisted session] ▶ open job search with a persisted session {"stepIndex":1}
+02:49:16.560 INFO  chrome-iphone13-21223cf2 [open job search with a persisted session] opening job search {"url":"/jobs/"}
+02:49:16.643 INFO  chrome-iphone13-21223cf2 [open job search with a persisted session] results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:16.643 STEP  chrome-iphone13-21223cf2 [open job search with a persisted session] ✔ open job search with a persisted session (84 ms) {"stepIndex":1}
+02:49:16.643 STEP  chrome-iphone13-21223cf2 [search for "QA Automation Engineer"] ▶ search for "QA Automation Engineer" {"stepIndex":2}
+02:49:16.644 INFO  chrome-iphone13-21223cf2 [search for "QA Automation Engineer"] searching jobs {"keyword":"QA Automation Engineer"}
+02:49:16.820 INFO  chrome-iphone13-21223cf2 [search for "QA Automation Engineer"] results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer"}
+02:49:16.832 INFO  chrome-iphone13-21223cf2 [search for "QA Automation Engineer"] job cards parsed {"count":1,"easyApply":1}
+02:49:16.834 STEP  chrome-iphone13-21223cf2 [search for "QA Automation Engineer"] ✔ search for "QA Automation Engineer" (191 ms) {"stepIndex":2}
+02:49:17.984 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/01-search-results.png {"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer","title":"Jobs | LinkedIn (fixture)"}
+02:49:17.986 STEP  chrome-iphone13-21223cf2 [filter the result list to Easy Apply only] ▶ filter the result list to Easy Apply only {"stepIndex":3}
+02:49:18.157 INFO  chrome-iphone13-21223cf2 [filter the result list to Easy Apply only] checked Easy Apply filter checkbox
+02:49:18.184 INFO  chrome-iphone13-21223cf2 [filter the result list to Easy Apply only] job cards parsed {"count":1,"easyApply":1}
+02:49:18.190 INFO  chrome-iphone13-21223cf2 [filter the result list to Easy Apply only] results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer&f_AL=1"}
+02:49:18.203 INFO  chrome-iphone13-21223cf2 [filter the result list to Easy Apply only] job cards parsed {"count":1,"easyApply":1}
+02:49:18.203 STEP  chrome-iphone13-21223cf2 [filter the result list to Easy Apply only] ✔ filter the result list to Easy Apply only (217 ms) {"stepIndex":3}
+02:49:18.543 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/02-easy-apply-filter.png {"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer&f_AL=1","title":"Jobs | LinkedIn (fixture)"}
+02:49:18.547 STEP  chrome-iphone13-21223cf2 [open the first Easy Apply job] ▶ open the first Easy Apply job {"stepIndex":4}
+02:49:18.560 INFO  chrome-iphone13-21223cf2 [open the first Easy Apply job] job cards parsed {"count":1,"easyApply":1}
+02:49:18.561 INFO  chrome-iphone13-21223cf2 [open the first Easy Apply job] opening job {"title":"Senior QA Automation Engineer"}
+02:49:18.684 INFO  chrome-iphone13-21223cf2 [open the first Easy Apply job] job detail loaded {"title":"Senior QA Automation Engineer","url":"http://127.0.0.1:4321/jobs/view/1001"}
+02:49:18.691 STEP  chrome-iphone13-21223cf2 [open the first Easy Apply job] ✔ open the first Easy Apply job (144 ms) {"stepIndex":4}
+02:49:18.691 STEP  chrome-iphone13-21223cf2 [open the Easy Apply form] ▶ open the Easy Apply form {"stepIndex":5}
+02:49:18.695 INFO  chrome-iphone13-21223cf2 [open the Easy Apply form] clicking Easy Apply {"title":"Senior QA Automation Engineer"}
+02:49:18.892 INFO  chrome-iphone13-21223cf2 [open the Easy Apply form] Easy Apply modal opened {"header":"Apply to Acme Cloud"}
+02:49:18.892 STEP  chrome-iphone13-21223cf2 [open the Easy Apply form] ✔ open the Easy Apply form (201 ms) {"stepIndex":5}
+02:49:18.892 STEP  chrome-iphone13-21223cf2 [read the form schema and assert required fields] ▶ read the form schema and assert required fields {"stepIndex":6}
+02:49:18.906 INFO  chrome-iphone13-21223cf2 [read the form schema and assert required fields] form fields discovered {"fields":[{"label":"First name","type":"text","required":true,"name":"firstName"},{"label":"Last name","type":"text","required":true,"name":"lastName"},{"label":"Email address","type":"email","required":true,"name":"email"},{"label":"Mobile phone number","type":"tel","required":false,"name":"phone"}]}
+02:49:18.914 STEP  chrome-iphone13-21223cf2 [read the form schema and assert required fields] ✔ read the form schema and assert required fields (22 ms) {"stepIndex":6}
+02:49:19.525 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/03-form-step-1.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:19.527 STEP  chrome-iphone13-21223cf2 [clicking Next with empty required fields is rejected] ▶ clicking Next with empty required fields is rejected {"stepIndex":7}
+02:49:19.540 INFO  chrome-iphone13-21223cf2 [clicking Next with empty required fields is rejected] clicking Next {"label":"Next"}
+02:49:19.718 INFO  chrome-iphone13-21223cf2 [clicking Next with empty required fields is rejected] validation errors shown {"errors":["Please enter a valid answer","Please enter a valid answer","Please enter a valid answer"]}
+02:49:19.718 STEP  chrome-iphone13-21223cf2 [clicking Next with empty required fields is rejected] ✔ clicking Next with empty required fields is rejected (191 ms) {"stepIndex":7}
+02:49:19.775 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/04-required-field-errors.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:19.776 STEP  chrome-iphone13-21223cf2 [fill contact details and advance to the resume step] ▶ fill contact details and advance to the resume step {"stepIndex":8}
+02:49:19.801 INFO  chrome-iphone13-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"First name","value":"Alice"}
+02:49:19.815 INFO  chrome-iphone13-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Last name","value":"Chen"}
+02:49:19.831 INFO  chrome-iphone13-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Email address","value":"alice.qa@example.com"}
+02:49:19.880 INFO  chrome-iphone13-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Mobile phone number","value":"+86 138 0000 0000"}
+02:49:19.897 INFO  chrome-iphone13-21223cf2 [fill contact details and advance to the resume step] clicking Next {"label":"Next"}
+02:49:20.064 STEP  chrome-iphone13-21223cf2 [fill contact details and advance to the resume step] ✔ fill contact details and advance to the resume step (288 ms) {"stepIndex":8}
+02:49:20.067 STEP  chrome-iphone13-21223cf2 [resume step starts with a blocked Next button] ▶ resume step starts with a blocked Next button {"stepIndex":9}
+02:49:20.070 STEP  chrome-iphone13-21223cf2 [resume step starts with a blocked Next button] ✔ resume step starts with a blocked Next button (3 ms) {"stepIndex":9}
+02:49:20.119 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/05-resume-step-blocked.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:20.119 STEP  chrome-iphone13-21223cf2 [reject an unsupported file type] ▶ reject an unsupported file type {"stepIndex":10}
+02:49:20.250 INFO  chrome-iphone13-21223cf2 [reject an unsupported file type] resume upload attempted {"name":"resume.exe","attached":false}
+02:49:20.258 STEP  chrome-iphone13-21223cf2 [reject an unsupported file type] ✔ reject an unsupported file type (139 ms) {"stepIndex":10}
+02:49:20.304 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/06-resume-invalid-type.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:20.305 STEP  chrome-iphone13-21223cf2 [reject a resume above the size limit] ▶ reject a resume above the size limit {"stepIndex":11}
+02:49:20.568 INFO  chrome-iphone13-21223cf2 [reject a resume above the size limit] resume upload attempted {"name":"huge-resume.pdf","attached":false}
+02:49:20.587 STEP  chrome-iphone13-21223cf2 [reject a resume above the size limit] ✔ reject a resume above the size limit (282 ms) {"stepIndex":11}
+02:49:20.588 STEP  chrome-iphone13-21223cf2 [accept a valid PDF and enable Next] ▶ accept a valid PDF and enable Next {"stepIndex":12}
+02:49:20.717 INFO  chrome-iphone13-21223cf2 [accept a valid PDF and enable Next] resume upload attempted {"name":"alice-chen-resume.pdf","attached":true}
+02:49:20.730 STEP  chrome-iphone13-21223cf2 [accept a valid PDF and enable Next] ✔ accept a valid PDF and enable Next (142 ms) {"stepIndex":12}
+02:49:20.791 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/07-resume-valid.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:20.792 STEP  chrome-iphone13-21223cf2 [advance to the review step] ▶ advance to the review step {"stepIndex":13}
+02:49:20.802 INFO  chrome-iphone13-21223cf2 [advance to the review step] clicking Next {"label":"Review"}
+02:49:20.991 STEP  chrome-iphone13-21223cf2 [advance to the review step] ✔ advance to the review step (199 ms) {"stepIndex":13}
+02:49:20.991 STEP  chrome-iphone13-21223cf2 [review step exposes an enabled Submit button and nothing was sent] ▶ review step exposes an enabled Submit button and nothing was sent {"stepIndex":14}
+02:49:20.999 STEP  chrome-iphone13-21223cf2 [review step exposes an enabled Submit button and nothing was sent] ✔ review step exposes an enabled Submit button and nothing was sent (8 ms) {"stepIndex":14}
+02:49:21.059 INFO  chrome-iphone13-21223cf2 screenshot captured: artifacts/evidence/chrome-iphone13/mock-easy-apply-search-form-upload-and-review-gates-every-re/08-review-step-without-submit.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:21.120 INFO  chrome-iphone13-21223cf2 test finished {"scope":"chrome-iphone13-21223cf2","durationMs":4748,"steps":[{"index":1,"name":"open job search with a persisted session","startedAt":1793933356559,"status":"passed","durationMs":84},{"index":2,"name":"search for \"QA Automation Engineer\"","startedAt":1793933356643,"status":"passed","durationMs":191},{"index":3,"name":"filter the result list to Easy Apply only","startedAt":1793933357986,"status":"passed","durationMs":217},{"index":4,"name":"open the first Easy Apply job","startedAt":1793933358547,"status":"passed","durationMs":144},{"index":5,"name":"open the Easy Apply form","startedAt":1793933358691,"status":"passed","durationMs":201},{"index":6,"name":"read the form schema and assert required fields","startedAt":1793933358892,"status":"passed","durationMs":22},{"index":7,"name":"clicking Next with empty required fields is rejected","startedAt":1793933359527,"status":"passed","durationMs":191},{"index":8,"name":"fill contact details and advance to the resume step","startedAt":1793933359776,"status":"passed","durationMs":288},{"index":9,"name":"resume step starts with a blocked Next button","startedAt":1793933360067,"status":"passed","durationMs":3},{"index":10,"name":"reject an unsupported file type","startedAt":1793933360119,"status":"passed","durationMs":139},{"index":11,"name":"reject a resume above the size limit","startedAt":1793933360305,"status":"passed","durationMs":282},{"index":12,"name":"accept a valid PDF and enable Next","startedAt":1793933360588,"status":"passed","durationMs":142},{"index":13,"name":"advance to the review step","startedAt":1793933360792,"status":"passed","durationMs":199},{"index":14,"name":"review step exposes an enabled Submit button and nothing was sent","startedAt":1793933360991,"status":"passed","durationMs":8}],"log":"/home/user/workspace/artifacts/test-results/mock-easy-apply.flow--mock-06b2f-and-stops-before-submitting-chrome-iphone13/logs/chrome-iphone13-21223cf2-2026-11-06T02-49-16-373Z.log"}

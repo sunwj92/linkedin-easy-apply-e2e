@@ -1,0 +1,26 @@
+02:49:14.142 INFO  chrome-desktop-8eafd976 logger initialised for "chrome-desktop-8eafd976"
+02:49:14.142 INFO  chrome-desktop-8eafd976 storage state accepted {"user":"userB","path":"/home/user/workspace/.auth/userB.json","cookies":1,"origins":0}
+02:49:14.673 INFO  chrome-desktop-8eafd976 browser context created {"user":"userB","reusedState":true,"statePath":"/home/user/workspace/.auth/userB.json"}
+02:49:14.673 INFO  chrome-desktop-8eafd976 opening job search {"url":"/jobs/"}
+02:49:14.903 INFO  chrome-desktop-8eafd976 results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:14.903 INFO  chrome-desktop-8eafd976 searching jobs {"keyword":"SDET II"}
+02:49:15.073 INFO  chrome-desktop-8eafd976 results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=SDET+II"}
+02:49:15.074 INFO  chrome-desktop-8eafd976 opening job {"title":"SDET II"}
+02:49:15.125 INFO  chrome-desktop-8eafd976 job detail loaded {"title":"SDET II","url":"http://127.0.0.1:4321/jobs/view/1002"}
+02:49:15.131 INFO  chrome-desktop-8eafd976 clicking Easy Apply {"title":"SDET II"}
+02:49:15.209 INFO  chrome-desktop-8eafd976 Easy Apply modal opened {"header":"Apply to Nimbus Labs"}
+02:49:15.209 STEP  chrome-desktop-8eafd976 [form schema reflects the job (single email field, two steps)] ▶ form schema reflects the job (single email field, two steps) {"stepIndex":1}
+02:49:15.227 STEP  chrome-desktop-8eafd976 [form schema reflects the job (single email field, two steps)] ✔ form schema reflects the job (single email field, two steps) (18 ms) {"stepIndex":1}
+02:49:15.227 STEP  chrome-desktop-8eafd976 [empty submission shows a required-field error and stays on step 1] ▶ empty submission shows a required-field error and stays on step 1 {"stepIndex":2}
+02:49:15.235 INFO  chrome-desktop-8eafd976 [empty submission shows a required-field error and stays on step 1] clicking Next {"label":"Review"}
+02:49:15.547 STEP  chrome-desktop-8eafd976 [empty submission shows a required-field error and stays on step 1] ✔ empty submission shows a required-field error and stays on step 1 (320 ms) {"stepIndex":2}
+02:49:15.578 INFO  chrome-desktop-8eafd976 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-validation-rules-and-button-state-rejects-mi/01-email-required-error.png {"url":"http://127.0.0.1:4321/jobs/view/1002","title":"SDET II | LinkedIn (fixture)"}
+02:49:15.580 STEP  chrome-desktop-8eafd976 [malformed email is rejected] ▶ malformed email is rejected {"stepIndex":3}
+02:49:15.592 INFO  chrome-desktop-8eafd976 [malformed email is rejected] filled field {"label":"Email address","value":"not-an-email"}
+02:49:15.600 INFO  chrome-desktop-8eafd976 [malformed email is rejected] clicking Next {"label":"Review"}
+02:49:15.787 STEP  chrome-desktop-8eafd976 [malformed email is rejected] ✔ malformed email is rejected (207 ms) {"stepIndex":3}
+02:49:15.788 STEP  chrome-desktop-8eafd976 [valid email advances to review] ▶ valid email advances to review {"stepIndex":4}
+02:49:15.796 INFO  chrome-desktop-8eafd976 [valid email advances to review] filled field {"label":"Email address","value":"bob.qa@example.com"}
+02:49:15.801 INFO  chrome-desktop-8eafd976 [valid email advances to review] clicking Next {"label":"Review"}
+02:49:15.990 STEP  chrome-desktop-8eafd976 [valid email advances to review] ✔ valid email advances to review (202 ms) {"stepIndex":4}
+02:49:16.015 INFO  chrome-desktop-8eafd976 test finished {"scope":"chrome-desktop-8eafd976","durationMs":1874,"steps":[{"index":1,"name":"form schema reflects the job (single email field, two steps)","startedAt":1793933355209,"status":"passed","durationMs":18},{"index":2,"name":"empty submission shows a required-field error and stays on step 1","startedAt":1793933355227,"status":"passed","durationMs":320},{"index":3,"name":"malformed email is rejected","startedAt":1793933355580,"status":"passed","durationMs":207},{"index":4,"name":"valid email advances to review","startedAt":1793933355788,"status":"passed","durationMs":202}],"log":"/home/user/workspace/artifacts/test-results/mock-validation--mock-Easy-edf9f-d-answers-without-advancing-chrome-desktop/logs/chrome-desktop-8eafd976-2026-11-06T02-49-14-142Z.log"}

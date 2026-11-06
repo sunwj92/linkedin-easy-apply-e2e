@@ -1,0 +1,20 @@
+02:49:14.150 INFO  chrome-desktop-8eafd976 logger initialised for "chrome-desktop-8eafd976"
+02:49:14.150 INFO  chrome-desktop-8eafd976 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:14.397 INFO  chrome-desktop-8eafd976 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:14.398 INFO  chrome-desktop-8eafd976 opening job search {"url":"/jobs/"}
+02:49:14.472 INFO  chrome-desktop-8eafd976 results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:14.473 INFO  chrome-desktop-8eafd976 searching jobs {"keyword":"QA Automation Engineer"}
+02:49:14.625 INFO  chrome-desktop-8eafd976 results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer"}
+02:49:14.626 INFO  chrome-desktop-8eafd976 opening job {"title":"Senior QA Automation Engineer"}
+02:49:14.704 INFO  chrome-desktop-8eafd976 job detail loaded {"title":"Senior QA Automation Engineer","url":"http://127.0.0.1:4321/jobs/view/1001"}
+02:49:14.710 INFO  chrome-desktop-8eafd976 clicking Easy Apply {"title":"Senior QA Automation Engineer"}
+02:49:14.871 INFO  chrome-desktop-8eafd976 Easy Apply modal opened {"header":"Apply to Acme Cloud"}
+02:49:14.970 INFO  chrome-desktop-8eafd976 filled field {"label":"First name","value":"Alice"}
+02:49:15.001 INFO  chrome-desktop-8eafd976 filled field {"label":"Last name","value":"Chen"}
+02:49:15.019 INFO  chrome-desktop-8eafd976 filled field {"label":"Email address","value":"alice.qa@example.com"}
+02:49:15.026 INFO  chrome-desktop-8eafd976 clicking Next {"label":"Next"}
+02:49:15.709 INFO  chrome-desktop-8eafd976 resume upload attempted {"name":"alice-chen-resume.pdf","attached":true}
+02:49:15.714 STEP  chrome-desktop-8eafd976 [removing the resume re-disables the footer button] ▶ removing the resume re-disables the footer button {"stepIndex":1}
+02:49:15.806 STEP  chrome-desktop-8eafd976 [removing the resume re-disables the footer button] ✔ removing the resume re-disables the footer button (92 ms) {"stepIndex":1}
+02:49:15.831 INFO  chrome-desktop-8eafd976 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-validation-rules-and-button-state-clearing-t/01-next-disabled-after-clear.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:15.866 INFO  chrome-desktop-8eafd976 test finished {"scope":"chrome-desktop-8eafd976","durationMs":1716,"steps":[{"index":1,"name":"removing the resume re-disables the footer button","startedAt":1793933355714,"status":"passed","durationMs":92}],"log":"/home/user/workspace/artifacts/test-results/mock-validation--mock-Easy-23c5b-locks-the-Next-button-again-chrome-desktop/logs/chrome-desktop-8eafd976-2026-11-06T02-49-14-150Z.log"}

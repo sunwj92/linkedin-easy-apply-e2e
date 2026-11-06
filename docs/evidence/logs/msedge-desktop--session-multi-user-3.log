@@ -1,0 +1,7 @@
+02:49:29.625 INFO  msedge-desktop-7d2d9174 logger initialised for "msedge-desktop-7d2d9174"
+02:49:29.711 INFO  msedge-desktop-7d2d9174 opening login page {"url":"/login"}
+02:49:29.734 INFO  msedge-desktop-7d2d9174 submitting credentials {"email":"alice.qa@example.com","mode":"mock"}
+02:49:29.860 INFO  msedge-desktop-7d2d9174 login succeeded {"url":"http://127.0.0.1:4321/jobs"}
+02:49:29.865 INFO  msedge-desktop-7d2d9174 storage state persisted {"path":"/var/folders/8k/8h271xh536jd_8f7hzmbwx8m0000gn/T/linkedin-e2e-fresh-1793933369626-7db8ef5fa716a8.json"}
+02:49:29.883 INFO  msedge-desktop-7d2d9174 fallback login persisted a new storage state {"path":"/var/folders/8k/8h271xh536jd_8f7hzmbwx8m0000gn/T/linkedin-e2e-fresh-1793933369626-7db8ef5fa716a8.json"}
+02:49:29.919 INFO  msedge-desktop-7d2d9174 test finished {"scope":"msedge-desktop-7d2d9174","durationMs":294,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-a6333-sts-it-when-no-state-exists-msedge-desktop/logs/msedge-desktop-7d2d9174-2026-11-06T02-49-29-625Z.log"}

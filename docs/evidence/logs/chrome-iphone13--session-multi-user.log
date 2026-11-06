@@ -1,0 +1,7 @@
+02:49:20.268 INFO  chrome-iphone13-7d2d9174 logger initialised for "chrome-iphone13-7d2d9174"
+02:49:20.269 INFO  chrome-iphone13-7d2d9174 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:20.365 INFO  chrome-iphone13-7d2d9174 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:20.365 INFO  chrome-iphone13-7d2d9174 storage state accepted {"user":"userB","path":"/home/user/workspace/.auth/userB.json","cookies":1,"origins":0}
+02:49:20.465 INFO  chrome-iphone13-7d2d9174 browser context created {"user":"userB","reusedState":true,"statePath":"/home/user/workspace/.auth/userB.json"}
+02:49:20.606 INFO  chrome-iphone13-7d2d9174 two concurrent sessions verified {"alice":"Alice Chen","bob":"Bob Liu"}
+02:49:20.731 INFO  chrome-iphone13-7d2d9174 test finished {"scope":"chrome-iphone13-7d2d9174","durationMs":463,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-3988c-rently-in-isolated-contexts-chrome-iphone13/logs/chrome-iphone13-7d2d9174-2026-11-06T02-49-20-268Z.log"}

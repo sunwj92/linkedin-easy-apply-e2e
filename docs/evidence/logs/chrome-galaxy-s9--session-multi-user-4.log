@@ -1,0 +1,5 @@
+02:49:25.682 INFO  chrome-galaxy-s9-7d2d9174 logger initialised for "chrome-galaxy-s9-7d2d9174"
+02:49:25.682 INFO  chrome-galaxy-s9-7d2d9174 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:25.779 INFO  chrome-galaxy-s9-7d2d9174 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:25.826 INFO  chrome-galaxy-s9-7d2d9174 session reused with zero login requests
+02:49:26.042 INFO  chrome-galaxy-s9-7d2d9174 test finished {"scope":"chrome-galaxy-s9-7d2d9174","durationMs":361,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-d51bb-hout-hitting-the-login-form-chrome-galaxy-s9/logs/chrome-galaxy-s9-7d2d9174-2026-11-06T02-49-25-682Z.log"}

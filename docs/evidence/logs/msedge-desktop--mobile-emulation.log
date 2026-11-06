@@ -1,0 +1,2 @@
+02:49:28.468 INFO  msedge-desktop-b093ba3f logger initialised for "msedge-desktop-b093ba3f"
+02:49:28.469 INFO  msedge-desktop-b093ba3f test finished {"scope":"msedge-desktop-b093ba3f","durationMs":1,"steps":[],"log":"/home/user/workspace/artifacts/test-results/mock-mobile-emulation--moc-405f5-l-opens-the-Easy-Apply-form-msedge-desktop/logs/msedge-desktop-b093ba3f-2026-11-06T02-49-28-468Z.log"}

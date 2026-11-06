@@ -1,0 +1,13 @@
+02:49:16.451 INFO  chrome-iphone13-a6760a88 logger initialised for "chrome-iphone13-a6760a88"
+02:49:16.453 INFO  chrome-iphone13-a6760a88 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:16.721 INFO  chrome-iphone13-a6760a88 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:16.721 INFO  chrome-iphone13-a6760a88 opening job search {"url":"/jobs/"}
+02:49:16.834 INFO  chrome-iphone13-a6760a88 results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:16.834 INFO  chrome-iphone13-a6760a88 searching jobs {"keyword":"Frontend Engineer"}
+02:49:17.034 INFO  chrome-iphone13-a6760a88 results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=Frontend+Engineer"}
+02:49:17.034 INFO  chrome-iphone13-a6760a88 opening job {"title":"Frontend Engineer"}
+02:49:17.437 INFO  chrome-iphone13-a6760a88 job detail loaded {"title":"Frontend Engineer","url":"http://127.0.0.1:4321/jobs/view/1004"}
+02:49:17.444 STEP  chrome-iphone13-a6760a88 [opening Easy Apply on a closed job fails] ▶ opening Easy Apply on a closed job fails {"stepIndex":1}
+02:49:17.472 STEP  chrome-iphone13-a6760a88 [opening Easy Apply on a closed job fails] ✔ opening Easy Apply on a closed job fails (28 ms) {"stepIndex":1}
+02:49:18.584 ERROR chrome-iphone13-a6760a88 failure bundle written {"error":"[object Object]"}
+02:49:18.809 INFO  chrome-iphone13-a6760a88 test finished {"scope":"chrome-iphone13-a6760a88","durationMs":2358,"steps":[{"index":1,"name":"opening Easy Apply on a closed job fails","startedAt":1793933357444,"status":"passed","durationMs":28}],"log":"/home/user/workspace/artifacts/test-results/mock-error-handling--mock--9f782-lus-screenshot-and-DOM-dump-chrome-iphone13/logs/chrome-iphone13-a6760a88-2026-11-06T02-49-16-451Z.log"}

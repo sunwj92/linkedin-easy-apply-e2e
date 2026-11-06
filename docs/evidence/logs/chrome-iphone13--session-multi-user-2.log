@@ -1,0 +1,2 @@
+02:49:20.669 INFO  chrome-iphone13-7d2d9174 logger initialised for "chrome-iphone13-7d2d9174"
+02:49:20.670 INFO  chrome-iphone13-7d2d9174 test finished {"scope":"chrome-iphone13-7d2d9174","durationMs":2,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-8618a-ionable-SessionExpiredError-chrome-iphone13/logs/chrome-iphone13-7d2d9174-2026-11-06T02-49-20-669Z.log"}

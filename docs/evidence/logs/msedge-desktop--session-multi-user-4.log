@@ -1,0 +1,5 @@
+02:49:29.499 INFO  msedge-desktop-7d2d9174 logger initialised for "msedge-desktop-7d2d9174"
+02:49:29.500 INFO  msedge-desktop-7d2d9174 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:29.582 INFO  msedge-desktop-7d2d9174 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:29.640 INFO  msedge-desktop-7d2d9174 session reused with zero login requests
+02:49:29.694 INFO  msedge-desktop-7d2d9174 test finished {"scope":"msedge-desktop-7d2d9174","durationMs":195,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-d51bb-hout-hitting-the-login-form-msedge-desktop/logs/msedge-desktop-7d2d9174-2026-11-06T02-49-29-499Z.log"}

@@ -1,0 +1,66 @@
+02:49:12.183 INFO  chrome-desktop-21223cf2 logger initialised for "chrome-desktop-21223cf2"
+02:49:12.186 INFO  chrome-desktop-21223cf2 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:12.517 INFO  chrome-desktop-21223cf2 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:12.517 STEP  chrome-desktop-21223cf2 [open job search with a persisted session] ▶ open job search with a persisted session {"stepIndex":1}
+02:49:12.517 INFO  chrome-desktop-21223cf2 [open job search with a persisted session] opening job search {"url":"/jobs/"}
+02:49:12.923 INFO  chrome-desktop-21223cf2 [open job search with a persisted session] results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:12.923 STEP  chrome-desktop-21223cf2 [open job search with a persisted session] ✔ open job search with a persisted session (406 ms) {"stepIndex":1}
+02:49:12.924 STEP  chrome-desktop-21223cf2 [search for "QA Automation Engineer"] ▶ search for "QA Automation Engineer" {"stepIndex":2}
+02:49:12.924 INFO  chrome-desktop-21223cf2 [search for "QA Automation Engineer"] searching jobs {"keyword":"QA Automation Engineer"}
+02:49:14.118 INFO  chrome-desktop-21223cf2 [search for "QA Automation Engineer"] results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer"}
+02:49:14.125 INFO  chrome-desktop-21223cf2 [search for "QA Automation Engineer"] job cards parsed {"count":1,"easyApply":1}
+02:49:14.127 STEP  chrome-desktop-21223cf2 [search for "QA Automation Engineer"] ✔ search for "QA Automation Engineer" (1203 ms) {"stepIndex":2}
+02:49:14.340 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/01-search-results.png {"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer","title":"Jobs | LinkedIn (fixture)"}
+02:49:14.341 STEP  chrome-desktop-21223cf2 [filter the result list to Easy Apply only] ▶ filter the result list to Easy Apply only {"stepIndex":3}
+02:49:14.416 INFO  chrome-desktop-21223cf2 [filter the result list to Easy Apply only] checked Easy Apply filter checkbox
+02:49:14.432 INFO  chrome-desktop-21223cf2 [filter the result list to Easy Apply only] job cards parsed {"count":1,"easyApply":1}
+02:49:14.447 INFO  chrome-desktop-21223cf2 [filter the result list to Easy Apply only] results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer&f_AL=1"}
+02:49:14.469 INFO  chrome-desktop-21223cf2 [filter the result list to Easy Apply only] job cards parsed {"count":1,"easyApply":1}
+02:49:14.469 STEP  chrome-desktop-21223cf2 [filter the result list to Easy Apply only] ✔ filter the result list to Easy Apply only (128 ms) {"stepIndex":3}
+02:49:14.671 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/02-easy-apply-filter.png {"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer&f_AL=1","title":"Jobs | LinkedIn (fixture)"}
+02:49:14.672 STEP  chrome-desktop-21223cf2 [open the first Easy Apply job] ▶ open the first Easy Apply job {"stepIndex":4}
+02:49:14.683 INFO  chrome-desktop-21223cf2 [open the first Easy Apply job] job cards parsed {"count":1,"easyApply":1}
+02:49:14.683 INFO  chrome-desktop-21223cf2 [open the first Easy Apply job] opening job {"title":"Senior QA Automation Engineer"}
+02:49:14.742 INFO  chrome-desktop-21223cf2 [open the first Easy Apply job] job detail loaded {"title":"Senior QA Automation Engineer","url":"http://127.0.0.1:4321/jobs/view/1001"}
+02:49:14.748 STEP  chrome-desktop-21223cf2 [open the first Easy Apply job] ✔ open the first Easy Apply job (76 ms) {"stepIndex":4}
+02:49:14.749 STEP  chrome-desktop-21223cf2 [open the Easy Apply form] ▶ open the Easy Apply form {"stepIndex":5}
+02:49:14.752 INFO  chrome-desktop-21223cf2 [open the Easy Apply form] clicking Easy Apply {"title":"Senior QA Automation Engineer"}
+02:49:15.178 INFO  chrome-desktop-21223cf2 [open the Easy Apply form] Easy Apply modal opened {"header":"Apply to Acme Cloud"}
+02:49:15.179 STEP  chrome-desktop-21223cf2 [open the Easy Apply form] ✔ open the Easy Apply form (430 ms) {"stepIndex":5}
+02:49:15.179 STEP  chrome-desktop-21223cf2 [read the form schema and assert required fields] ▶ read the form schema and assert required fields {"stepIndex":6}
+02:49:15.191 INFO  chrome-desktop-21223cf2 [read the form schema and assert required fields] form fields discovered {"fields":[{"label":"First name","type":"text","required":true,"name":"firstName"},{"label":"Last name","type":"text","required":true,"name":"lastName"},{"label":"Email address","type":"email","required":true,"name":"email"},{"label":"Mobile phone number","type":"tel","required":false,"name":"phone"}]}
+02:49:15.195 STEP  chrome-desktop-21223cf2 [read the form schema and assert required fields] ✔ read the form schema and assert required fields (16 ms) {"stepIndex":6}
+02:49:15.399 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/03-form-step-1.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:15.400 STEP  chrome-desktop-21223cf2 [clicking Next with empty required fields is rejected] ▶ clicking Next with empty required fields is rejected {"stepIndex":7}
+02:49:15.405 INFO  chrome-desktop-21223cf2 [clicking Next with empty required fields is rejected] clicking Next {"label":"Next"}
+02:49:15.591 INFO  chrome-desktop-21223cf2 [clicking Next with empty required fields is rejected] validation errors shown {"errors":["Please enter a valid answer","Please enter a valid answer","Please enter a valid answer"]}
+02:49:15.591 STEP  chrome-desktop-21223cf2 [clicking Next with empty required fields is rejected] ✔ clicking Next with empty required fields is rejected (191 ms) {"stepIndex":7}
+02:49:15.621 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/04-required-field-errors.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:15.624 STEP  chrome-desktop-21223cf2 [fill contact details and advance to the resume step] ▶ fill contact details and advance to the resume step {"stepIndex":8}
+02:49:15.638 INFO  chrome-desktop-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"First name","value":"Alice"}
+02:49:15.648 INFO  chrome-desktop-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Last name","value":"Chen"}
+02:49:15.657 INFO  chrome-desktop-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Email address","value":"alice.qa@example.com"}
+02:49:15.669 INFO  chrome-desktop-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Mobile phone number","value":"+86 138 0000 0000"}
+02:49:15.679 INFO  chrome-desktop-21223cf2 [fill contact details and advance to the resume step] clicking Next {"label":"Next"}
+02:49:15.868 STEP  chrome-desktop-21223cf2 [fill contact details and advance to the resume step] ✔ fill contact details and advance to the resume step (244 ms) {"stepIndex":8}
+02:49:15.871 STEP  chrome-desktop-21223cf2 [resume step starts with a blocked Next button] ▶ resume step starts with a blocked Next button {"stepIndex":9}
+02:49:15.875 STEP  chrome-desktop-21223cf2 [resume step starts with a blocked Next button] ✔ resume step starts with a blocked Next button (4 ms) {"stepIndex":9}
+02:49:15.906 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/05-resume-step-blocked.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:15.909 STEP  chrome-desktop-21223cf2 [reject an unsupported file type] ▶ reject an unsupported file type {"stepIndex":10}
+02:49:16.040 INFO  chrome-desktop-21223cf2 [reject an unsupported file type] resume upload attempted {"name":"resume.exe","attached":false}
+02:49:16.047 STEP  chrome-desktop-21223cf2 [reject an unsupported file type] ✔ reject an unsupported file type (138 ms) {"stepIndex":10}
+02:49:16.075 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/06-resume-invalid-type.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:16.075 STEP  chrome-desktop-21223cf2 [reject a resume above the size limit] ▶ reject a resume above the size limit {"stepIndex":11}
+02:49:16.332 INFO  chrome-desktop-21223cf2 [reject a resume above the size limit] resume upload attempted {"name":"huge-resume.pdf","attached":false}
+02:49:16.346 STEP  chrome-desktop-21223cf2 [reject a resume above the size limit] ✔ reject a resume above the size limit (271 ms) {"stepIndex":11}
+02:49:16.346 STEP  chrome-desktop-21223cf2 [accept a valid PDF and enable Next] ▶ accept a valid PDF and enable Next {"stepIndex":12}
+02:49:16.476 INFO  chrome-desktop-21223cf2 [accept a valid PDF and enable Next] resume upload attempted {"name":"alice-chen-resume.pdf","attached":true}
+02:49:16.490 STEP  chrome-desktop-21223cf2 [accept a valid PDF and enable Next] ✔ accept a valid PDF and enable Next (144 ms) {"stepIndex":12}
+02:49:16.536 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/07-resume-valid.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:16.548 STEP  chrome-desktop-21223cf2 [advance to the review step] ▶ advance to the review step {"stepIndex":13}
+02:49:16.592 INFO  chrome-desktop-21223cf2 [advance to the review step] clicking Next {"label":"Review"}
+02:49:16.804 STEP  chrome-desktop-21223cf2 [advance to the review step] ✔ advance to the review step (256 ms) {"stepIndex":13}
+02:49:16.805 STEP  chrome-desktop-21223cf2 [review step exposes an enabled Submit button and nothing was sent] ▶ review step exposes an enabled Submit button and nothing was sent {"stepIndex":14}
+02:49:16.822 STEP  chrome-desktop-21223cf2 [review step exposes an enabled Submit button and nothing was sent] ✔ review step exposes an enabled Submit button and nothing was sent (17 ms) {"stepIndex":14}
+02:49:16.858 INFO  chrome-desktop-21223cf2 screenshot captured: artifacts/evidence/chrome-desktop/mock-easy-apply-search-form-upload-and-review-gates-every-re/08-review-step-without-submit.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:16.902 INFO  chrome-desktop-21223cf2 test finished {"scope":"chrome-desktop-21223cf2","durationMs":4720,"steps":[{"index":1,"name":"open job search with a persisted session","startedAt":1793933352517,"status":"passed","durationMs":406},{"index":2,"name":"search for \"QA Automation Engineer\"","startedAt":1793933352924,"status":"passed","durationMs":1203},{"index":3,"name":"filter the result list to Easy Apply only","startedAt":1793933354341,"status":"passed","durationMs":128},{"index":4,"name":"open the first Easy Apply job","startedAt":1793933354672,"status":"passed","durationMs":76},{"index":5,"name":"open the Easy Apply form","startedAt":1793933354749,"status":"passed","durationMs":430},{"index":6,"name":"read the form schema and assert required fields","startedAt":1793933355179,"status":"passed","durationMs":16},{"index":7,"name":"clicking Next with empty required fields is rejected","startedAt":1793933355400,"status":"passed","durationMs":191},{"index":8,"name":"fill contact details and advance to the resume step","startedAt":1793933355624,"status":"passed","durationMs":244},{"index":9,"name":"resume step starts with a blocked Next button","startedAt":1793933355871,"status":"passed","durationMs":4},{"index":10,"name":"reject an unsupported file type","startedAt":1793933355909,"status":"passed","durationMs":138},{"index":11,"name":"reject a resume above the size limit","startedAt":1793933356075,"status":"passed","durationMs":271},{"index":12,"name":"accept a valid PDF and enable Next","startedAt":1793933356346,"status":"passed","durationMs":144},{"index":13,"name":"advance to the review step","startedAt":1793933356548,"status":"passed","durationMs":256},{"index":14,"name":"review step exposes an enabled Submit button and nothing was sent","startedAt":1793933356805,"status":"passed","durationMs":17}],"log":"/home/user/workspace/artifacts/test-results/mock-easy-apply.flow--mock-06b2f-and-stops-before-submitting-chrome-desktop/logs/chrome-desktop-21223cf2-2026-11-06T02-49-12-182Z.log"}

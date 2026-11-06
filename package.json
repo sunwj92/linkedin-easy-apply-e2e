@@ -1,0 +1,30 @@
+{
+  "name": "linkedin-easy-apply-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright test automation for the LinkedIn Easy Apply flow: search, form validation, file upload, button state, multi-user sessions, Chrome/Edge and mobile emulation.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:mock": "playwright test tests/mock tests/session",
+    "test:desktop": "playwright test tests/mock tests/session --project=chrome-desktop --project=msedge-desktop",
+    "test:mobile": "playwright test tests/mock tests/session --project=chrome-iphone13 --project=chrome-galaxy-s9",
+    "test:live": "cross-env LINKEDIN_LIVE=1 playwright test tests/live --project=chrome-desktop",
+    "auth": "playwright test tests/auth.setup.ts --project=setup",
+    "auth:save": "node scripts/save-auth.mjs",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report artifacts/html-report",
+    "evidence": "node scripts/collect-evidence.mjs",
+    "serve:mock": "node mock/server.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
+    "dotenv": "^18.0.9",
+    "typescript": "^7.0.2"
+  }
+}

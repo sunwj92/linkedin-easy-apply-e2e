@@ -1,0 +1,127 @@
+name: e2e
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Nightly regression against the fixture with the stable browser matrix.
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: e2e-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  mock-e2e:
+    name: fixture · ${{ matrix.channel }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        channel: [chromium, chrome, msedge]
+
+    env:
+      CI: true
+      BROWSER_CHANNELS: ${{ matrix.channel }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install ${{ matrix.channel }}
+        run: |
+          if [ "${{ matrix.channel }}" = "chromium" ]; then
+            npx playwright install --with-deps chromium
+          else
+            npx playwright install --with-deps ${{ matrix.channel }}
+          fi
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Run fixture suite (desktop + iPhone 13 + Galaxy S9)
+        run: |
+          npx playwright test tests/mock tests/session \
+            --project="${{ matrix.channel }}-desktop" \
+            --project="${{ matrix.channel }}-iphone13" \
+            --project="${{ matrix.channel }}-galaxy-s9"
+
+      - name: Collect evidence
+        if: always()
+        run: npm run evidence
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-report-${{ matrix.channel }}
+          path: artifacts/html-report
+          retention-days: 14
+
+      - name: Upload JUnit + logs + screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-${{ matrix.channel }}
+          path: |
+            artifacts/junit.xml
+            artifacts/results.json
+            docs/evidence
+          retention-days: 14
+
+  live-e2e:
+    name: live linkedin (manual, opt-in)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: linkedin-live
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chrome
+
+      - name: Restore storage states from secrets
+        env:
+          STATE_A: ${{ secrets.LINKEDIN_STATE_A_B64 }}
+          STATE_B: ${{ secrets.LINKEDIN_STATE_B_B64 }}
+        run: |
+          if [ -z "$STATE_A" ] || [ -z "$STATE_B" ]; then
+            echo "::warning::LINKEDIN_STATE_A_B64 / LINKEDIN_STATE_B_B64 are not configured; live job will skip."
+            exit 0
+          fi
+          mkdir -p .auth
+          printf '%s' "$STATE_A" | base64 -d > .auth/live-userA.json
+          printf '%s' "$STATE_B" | base64 -d > .auth/live-userB.json
+          chmod 600 .auth/*.json
+
+      - name: Run live smoke test
+        env:
+          LINKEDIN_LIVE: '1'
+          BROWSER_CHANNELS: chrome
+        run: npx playwright test tests/live --project=chrome-desktop
+
+      - name: Upload live artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-artifacts
+          path: |
+            artifacts/html-report
+            artifacts/junit.xml
+            docs/evidence
+          retention-days: 14

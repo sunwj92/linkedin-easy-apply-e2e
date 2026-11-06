@@ -1,0 +1,26 @@
+02:49:23.904 INFO  chrome-galaxy-s9-8eafd976 logger initialised for "chrome-galaxy-s9-8eafd976"
+02:49:23.904 INFO  chrome-galaxy-s9-8eafd976 storage state accepted {"user":"userB","path":"/home/user/workspace/.auth/userB.json","cookies":1,"origins":0}
+02:49:24.157 INFO  chrome-galaxy-s9-8eafd976 browser context created {"user":"userB","reusedState":true,"statePath":"/home/user/workspace/.auth/userB.json"}
+02:49:24.157 INFO  chrome-galaxy-s9-8eafd976 opening job search {"url":"/jobs/"}
+02:49:24.458 INFO  chrome-galaxy-s9-8eafd976 results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:24.459 INFO  chrome-galaxy-s9-8eafd976 searching jobs {"keyword":"SDET II"}
+02:49:24.548 INFO  chrome-galaxy-s9-8eafd976 results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=SDET+II"}
+02:49:24.548 INFO  chrome-galaxy-s9-8eafd976 opening job {"title":"SDET II"}
+02:49:24.609 INFO  chrome-galaxy-s9-8eafd976 job detail loaded {"title":"SDET II","url":"http://127.0.0.1:4321/jobs/view/1002"}
+02:49:24.615 INFO  chrome-galaxy-s9-8eafd976 clicking Easy Apply {"title":"SDET II"}
+02:49:24.811 INFO  chrome-galaxy-s9-8eafd976 Easy Apply modal opened {"header":"Apply to Nimbus Labs"}
+02:49:24.812 STEP  chrome-galaxy-s9-8eafd976 [form schema reflects the job (single email field, two steps)] ▶ form schema reflects the job (single email field, two steps) {"stepIndex":1}
+02:49:24.827 STEP  chrome-galaxy-s9-8eafd976 [form schema reflects the job (single email field, two steps)] ✔ form schema reflects the job (single email field, two steps) (15 ms) {"stepIndex":1}
+02:49:24.827 STEP  chrome-galaxy-s9-8eafd976 [empty submission shows a required-field error and stays on step 1] ▶ empty submission shows a required-field error and stays on step 1 {"stepIndex":2}
+02:49:24.832 INFO  chrome-galaxy-s9-8eafd976 [empty submission shows a required-field error and stays on step 1] clicking Next {"label":"Review"}
+02:49:25.028 STEP  chrome-galaxy-s9-8eafd976 [empty submission shows a required-field error and stays on step 1] ✔ empty submission shows a required-field error and stays on step 1 (201 ms) {"stepIndex":2}
+02:49:25.174 INFO  chrome-galaxy-s9-8eafd976 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-validation-rules-and-button-state-rejects-mi/01-email-required-error.png {"url":"http://127.0.0.1:4321/jobs/view/1002","title":"SDET II | LinkedIn (fixture)"}
+02:49:25.174 STEP  chrome-galaxy-s9-8eafd976 [malformed email is rejected] ▶ malformed email is rejected {"stepIndex":3}
+02:49:25.186 INFO  chrome-galaxy-s9-8eafd976 [malformed email is rejected] filled field {"label":"Email address","value":"not-an-email"}
+02:49:25.191 INFO  chrome-galaxy-s9-8eafd976 [malformed email is rejected] clicking Next {"label":"Review"}
+02:49:25.385 STEP  chrome-galaxy-s9-8eafd976 [malformed email is rejected] ✔ malformed email is rejected (211 ms) {"stepIndex":3}
+02:49:25.385 STEP  chrome-galaxy-s9-8eafd976 [valid email advances to review] ▶ valid email advances to review {"stepIndex":4}
+02:49:25.396 INFO  chrome-galaxy-s9-8eafd976 [valid email advances to review] filled field {"label":"Email address","value":"bob.qa@example.com"}
+02:49:25.401 INFO  chrome-galaxy-s9-8eafd976 [valid email advances to review] clicking Next {"label":"Review"}
+02:49:25.589 STEP  chrome-galaxy-s9-8eafd976 [valid email advances to review] ✔ valid email advances to review (204 ms) {"stepIndex":4}
+02:49:25.675 INFO  chrome-galaxy-s9-8eafd976 test finished {"scope":"chrome-galaxy-s9-8eafd976","durationMs":1771,"steps":[{"index":1,"name":"form schema reflects the job (single email field, two steps)","startedAt":1793933364812,"status":"passed","durationMs":15},{"index":2,"name":"empty submission shows a required-field error and stays on step 1","startedAt":1793933364827,"status":"passed","durationMs":201},{"index":3,"name":"malformed email is rejected","startedAt":1793933365174,"status":"passed","durationMs":211},{"index":4,"name":"valid email advances to review","startedAt":1793933365385,"status":"passed","durationMs":204}],"log":"/home/user/workspace/artifacts/test-results/mock-validation--mock-Easy-edf9f-d-answers-without-advancing-chrome-galaxy-s9/logs/chrome-galaxy-s9-8eafd976-2026-11-06T02-49-23-904Z.log"}

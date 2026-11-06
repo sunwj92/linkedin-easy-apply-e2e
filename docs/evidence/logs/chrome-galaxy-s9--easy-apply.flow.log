@@ -1,0 +1,66 @@
+02:49:21.254 INFO  chrome-galaxy-s9-21223cf2 logger initialised for "chrome-galaxy-s9-21223cf2"
+02:49:21.256 INFO  chrome-galaxy-s9-21223cf2 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:21.417 INFO  chrome-galaxy-s9-21223cf2 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:21.417 STEP  chrome-galaxy-s9-21223cf2 [open job search with a persisted session] ▶ open job search with a persisted session {"stepIndex":1}
+02:49:21.417 INFO  chrome-galaxy-s9-21223cf2 [open job search with a persisted session] opening job search {"url":"/jobs/"}
+02:49:21.480 INFO  chrome-galaxy-s9-21223cf2 [open job search with a persisted session] results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:21.481 STEP  chrome-galaxy-s9-21223cf2 [open job search with a persisted session] ✔ open job search with a persisted session (64 ms) {"stepIndex":1}
+02:49:21.481 STEP  chrome-galaxy-s9-21223cf2 [search for "QA Automation Engineer"] ▶ search for "QA Automation Engineer" {"stepIndex":2}
+02:49:21.481 INFO  chrome-galaxy-s9-21223cf2 [search for "QA Automation Engineer"] searching jobs {"keyword":"QA Automation Engineer"}
+02:49:21.642 INFO  chrome-galaxy-s9-21223cf2 [search for "QA Automation Engineer"] results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer"}
+02:49:21.652 INFO  chrome-galaxy-s9-21223cf2 [search for "QA Automation Engineer"] job cards parsed {"count":1,"easyApply":1}
+02:49:21.654 STEP  chrome-galaxy-s9-21223cf2 [search for "QA Automation Engineer"] ✔ search for "QA Automation Engineer" (173 ms) {"stepIndex":2}
+02:49:22.917 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/01-search-results.png {"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer","title":"Jobs | LinkedIn (fixture)"}
+02:49:22.919 STEP  chrome-galaxy-s9-21223cf2 [filter the result list to Easy Apply only] ▶ filter the result list to Easy Apply only {"stepIndex":3}
+02:49:22.976 INFO  chrome-galaxy-s9-21223cf2 [filter the result list to Easy Apply only] checked Easy Apply filter checkbox
+02:49:22.984 INFO  chrome-galaxy-s9-21223cf2 [filter the result list to Easy Apply only] job cards parsed {"count":1,"easyApply":1}
+02:49:22.985 INFO  chrome-galaxy-s9-21223cf2 [filter the result list to Easy Apply only] results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer&f_AL=1"}
+02:49:22.991 INFO  chrome-galaxy-s9-21223cf2 [filter the result list to Easy Apply only] job cards parsed {"count":1,"easyApply":1}
+02:49:22.991 STEP  chrome-galaxy-s9-21223cf2 [filter the result list to Easy Apply only] ✔ filter the result list to Easy Apply only (72 ms) {"stepIndex":3}
+02:49:23.446 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/02-easy-apply-filter.png {"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer&f_AL=1","title":"Jobs | LinkedIn (fixture)"}
+02:49:23.448 STEP  chrome-galaxy-s9-21223cf2 [open the first Easy Apply job] ▶ open the first Easy Apply job {"stepIndex":4}
+02:49:23.465 INFO  chrome-galaxy-s9-21223cf2 [open the first Easy Apply job] job cards parsed {"count":1,"easyApply":1}
+02:49:23.466 INFO  chrome-galaxy-s9-21223cf2 [open the first Easy Apply job] opening job {"title":"Senior QA Automation Engineer"}
+02:49:23.590 INFO  chrome-galaxy-s9-21223cf2 [open the first Easy Apply job] job detail loaded {"title":"Senior QA Automation Engineer","url":"http://127.0.0.1:4321/jobs/view/1001"}
+02:49:23.825 STEP  chrome-galaxy-s9-21223cf2 [open the first Easy Apply job] ✔ open the first Easy Apply job (377 ms) {"stepIndex":4}
+02:49:23.825 STEP  chrome-galaxy-s9-21223cf2 [open the Easy Apply form] ▶ open the Easy Apply form {"stepIndex":5}
+02:49:23.837 INFO  chrome-galaxy-s9-21223cf2 [open the Easy Apply form] clicking Easy Apply {"title":"Senior QA Automation Engineer"}
+02:49:24.049 INFO  chrome-galaxy-s9-21223cf2 [open the Easy Apply form] Easy Apply modal opened {"header":"Apply to Acme Cloud"}
+02:49:24.049 STEP  chrome-galaxy-s9-21223cf2 [open the Easy Apply form] ✔ open the Easy Apply form (224 ms) {"stepIndex":5}
+02:49:24.050 STEP  chrome-galaxy-s9-21223cf2 [read the form schema and assert required fields] ▶ read the form schema and assert required fields {"stepIndex":6}
+02:49:24.063 INFO  chrome-galaxy-s9-21223cf2 [read the form schema and assert required fields] form fields discovered {"fields":[{"label":"First name","type":"text","required":true,"name":"firstName"},{"label":"Last name","type":"text","required":true,"name":"lastName"},{"label":"Email address","type":"email","required":true,"name":"email"},{"label":"Mobile phone number","type":"tel","required":false,"name":"phone"}]}
+02:49:24.068 STEP  chrome-galaxy-s9-21223cf2 [read the form schema and assert required fields] ✔ read the form schema and assert required fields (18 ms) {"stepIndex":6}
+02:49:24.515 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/03-form-step-1.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:24.516 STEP  chrome-galaxy-s9-21223cf2 [clicking Next with empty required fields is rejected] ▶ clicking Next with empty required fields is rejected {"stepIndex":7}
+02:49:24.523 INFO  chrome-galaxy-s9-21223cf2 [clicking Next with empty required fields is rejected] clicking Next {"label":"Next"}
+02:49:24.710 INFO  chrome-galaxy-s9-21223cf2 [clicking Next with empty required fields is rejected] validation errors shown {"errors":["Please enter a valid answer","Please enter a valid answer","Please enter a valid answer"]}
+02:49:24.711 STEP  chrome-galaxy-s9-21223cf2 [clicking Next with empty required fields is rejected] ✔ clicking Next with empty required fields is rejected (195 ms) {"stepIndex":7}
+02:49:24.775 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/04-required-field-errors.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:24.776 STEP  chrome-galaxy-s9-21223cf2 [fill contact details and advance to the resume step] ▶ fill contact details and advance to the resume step {"stepIndex":8}
+02:49:24.790 INFO  chrome-galaxy-s9-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"First name","value":"Alice"}
+02:49:24.799 INFO  chrome-galaxy-s9-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Last name","value":"Chen"}
+02:49:24.810 INFO  chrome-galaxy-s9-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Email address","value":"alice.qa@example.com"}
+02:49:24.818 INFO  chrome-galaxy-s9-21223cf2 [fill contact details and advance to the resume step] filled field {"label":"Mobile phone number","value":"+86 138 0000 0000"}
+02:49:24.827 INFO  chrome-galaxy-s9-21223cf2 [fill contact details and advance to the resume step] clicking Next {"label":"Next"}
+02:49:25.013 STEP  chrome-galaxy-s9-21223cf2 [fill contact details and advance to the resume step] ✔ fill contact details and advance to the resume step (237 ms) {"stepIndex":8}
+02:49:25.016 STEP  chrome-galaxy-s9-21223cf2 [resume step starts with a blocked Next button] ▶ resume step starts with a blocked Next button {"stepIndex":9}
+02:49:25.020 STEP  chrome-galaxy-s9-21223cf2 [resume step starts with a blocked Next button] ✔ resume step starts with a blocked Next button (4 ms) {"stepIndex":9}
+02:49:25.086 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/05-resume-step-blocked.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:25.087 STEP  chrome-galaxy-s9-21223cf2 [reject an unsupported file type] ▶ reject an unsupported file type {"stepIndex":10}
+02:49:25.217 INFO  chrome-galaxy-s9-21223cf2 [reject an unsupported file type] resume upload attempted {"name":"resume.exe","attached":false}
+02:49:25.223 STEP  chrome-galaxy-s9-21223cf2 [reject an unsupported file type] ✔ reject an unsupported file type (136 ms) {"stepIndex":10}
+02:49:25.290 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/06-resume-invalid-type.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:25.291 STEP  chrome-galaxy-s9-21223cf2 [reject a resume above the size limit] ▶ reject a resume above the size limit {"stepIndex":11}
+02:49:25.548 INFO  chrome-galaxy-s9-21223cf2 [reject a resume above the size limit] resume upload attempted {"name":"huge-resume.pdf","attached":false}
+02:49:25.557 STEP  chrome-galaxy-s9-21223cf2 [reject a resume above the size limit] ✔ reject a resume above the size limit (266 ms) {"stepIndex":11}
+02:49:25.557 STEP  chrome-galaxy-s9-21223cf2 [accept a valid PDF and enable Next] ▶ accept a valid PDF and enable Next {"stepIndex":12}
+02:49:25.686 INFO  chrome-galaxy-s9-21223cf2 [accept a valid PDF and enable Next] resume upload attempted {"name":"alice-chen-resume.pdf","attached":true}
+02:49:25.695 STEP  chrome-galaxy-s9-21223cf2 [accept a valid PDF and enable Next] ✔ accept a valid PDF and enable Next (138 ms) {"stepIndex":12}
+02:49:25.755 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/07-resume-valid.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:25.756 STEP  chrome-galaxy-s9-21223cf2 [advance to the review step] ▶ advance to the review step {"stepIndex":13}
+02:49:25.764 INFO  chrome-galaxy-s9-21223cf2 [advance to the review step] clicking Next {"label":"Review"}
+02:49:25.944 STEP  chrome-galaxy-s9-21223cf2 [advance to the review step] ✔ advance to the review step (188 ms) {"stepIndex":13}
+02:49:25.945 STEP  chrome-galaxy-s9-21223cf2 [review step exposes an enabled Submit button and nothing was sent] ▶ review step exposes an enabled Submit button and nothing was sent {"stepIndex":14}
+02:49:25.950 STEP  chrome-galaxy-s9-21223cf2 [review step exposes an enabled Submit button and nothing was sent] ✔ review step exposes an enabled Submit button and nothing was sent (5 ms) {"stepIndex":14}
+02:49:26.025 INFO  chrome-galaxy-s9-21223cf2 screenshot captured: artifacts/evidence/chrome-galaxy-s9/mock-easy-apply-search-form-upload-and-review-gates-every-re/08-review-step-without-submit.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:26.131 INFO  chrome-galaxy-s9-21223cf2 test finished {"scope":"chrome-galaxy-s9-21223cf2","durationMs":4879,"steps":[{"index":1,"name":"open job search with a persisted session","startedAt":1793933361417,"status":"passed","durationMs":64},{"index":2,"name":"search for \"QA Automation Engineer\"","startedAt":1793933361481,"status":"passed","durationMs":173},{"index":3,"name":"filter the result list to Easy Apply only","startedAt":1793933362919,"status":"passed","durationMs":72},{"index":4,"name":"open the first Easy Apply job","startedAt":1793933363448,"status":"passed","durationMs":377},{"index":5,"name":"open the Easy Apply form","startedAt":1793933363825,"status":"passed","durationMs":224},{"index":6,"name":"read the form schema and assert required fields","startedAt":1793933364050,"status":"passed","durationMs":18},{"index":7,"name":"clicking Next with empty required fields is rejected","startedAt":1793933364516,"status":"passed","durationMs":195},{"index":8,"name":"fill contact details and advance to the resume step","startedAt":1793933364776,"status":"passed","durationMs":237},{"index":9,"name":"resume step starts with a blocked Next button","startedAt":1793933365016,"status":"passed","durationMs":4},{"index":10,"name":"reject an unsupported file type","startedAt":1793933365087,"status":"passed","durationMs":136},{"index":11,"name":"reject a resume above the size limit","startedAt":1793933365291,"status":"passed","durationMs":266},{"index":12,"name":"accept a valid PDF and enable Next","startedAt":1793933365557,"status":"passed","durationMs":138},{"index":13,"name":"advance to the review step","startedAt":1793933365756,"status":"passed","durationMs":188},{"index":14,"name":"review step exposes an enabled Submit button and nothing was sent","startedAt":1793933365945,"status":"passed","durationMs":5}],"log":"/home/user/workspace/artifacts/test-results/mock-easy-apply.flow--mock-06b2f-and-stops-before-submitting-chrome-galaxy-s9/logs/chrome-galaxy-s9-21223cf2-2026-11-06T02-49-21-254Z.log"}

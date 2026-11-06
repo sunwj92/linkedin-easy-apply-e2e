@@ -1,0 +1,2 @@
+02:49:29.616 INFO  msedge-desktop-7d2d9174 logger initialised for "msedge-desktop-7d2d9174"
+02:49:29.617 INFO  msedge-desktop-7d2d9174 test finished {"scope":"msedge-desktop-7d2d9174","durationMs":2,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-8618a-ionable-SessionExpiredError-msedge-desktop/logs/msedge-desktop-7d2d9174-2026-11-06T02-49-29-616Z.log"}

@@ -1,0 +1,13 @@
+02:49:26.669 INFO  msedge-desktop-a6760a88 logger initialised for "msedge-desktop-a6760a88"
+02:49:26.673 INFO  msedge-desktop-a6760a88 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:26.917 INFO  msedge-desktop-a6760a88 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:26.918 INFO  msedge-desktop-a6760a88 opening job search {"url":"/jobs/"}
+02:49:26.999 INFO  msedge-desktop-a6760a88 results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:26.999 INFO  msedge-desktop-a6760a88 searching jobs {"keyword":"Frontend Engineer"}
+02:49:27.809 INFO  msedge-desktop-a6760a88 results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=Frontend+Engineer"}
+02:49:27.809 INFO  msedge-desktop-a6760a88 opening job {"title":"Frontend Engineer"}
+02:49:27.890 INFO  msedge-desktop-a6760a88 job detail loaded {"title":"Frontend Engineer","url":"http://127.0.0.1:4321/jobs/view/1004"}
+02:49:27.894 STEP  msedge-desktop-a6760a88 [opening Easy Apply on a closed job fails] ▶ opening Easy Apply on a closed job fails {"stepIndex":1}
+02:49:27.899 STEP  msedge-desktop-a6760a88 [opening Easy Apply on a closed job fails] ✔ opening Easy Apply on a closed job fails (5 ms) {"stepIndex":1}
+02:49:28.605 ERROR msedge-desktop-a6760a88 failure bundle written {"error":"[object Object]"}
+02:49:28.685 INFO  msedge-desktop-a6760a88 test finished {"scope":"msedge-desktop-a6760a88","durationMs":2022,"steps":[{"index":1,"name":"opening Easy Apply on a closed job fails","startedAt":1793933367894,"status":"passed","durationMs":5}],"log":"/home/user/workspace/artifacts/test-results/mock-error-handling--mock--9f782-lus-screenshot-and-DOM-dump-msedge-desktop/logs/msedge-desktop-a6760a88-2026-11-06T02-49-26-668Z.log"}

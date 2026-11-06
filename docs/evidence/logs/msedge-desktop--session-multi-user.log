@@ -1,0 +1,7 @@
+02:49:28.699 INFO  msedge-desktop-7d2d9174 logger initialised for "msedge-desktop-7d2d9174"
+02:49:28.700 INFO  msedge-desktop-7d2d9174 storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:28.819 INFO  msedge-desktop-7d2d9174 browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:28.819 INFO  msedge-desktop-7d2d9174 storage state accepted {"user":"userB","path":"/home/user/workspace/.auth/userB.json","cookies":1,"origins":0}
+02:49:28.903 INFO  msedge-desktop-7d2d9174 browser context created {"user":"userB","reusedState":true,"statePath":"/home/user/workspace/.auth/userB.json"}
+02:49:29.417 INFO  msedge-desktop-7d2d9174 two concurrent sessions verified {"alice":"Alice Chen","bob":"Bob Liu"}
+02:49:29.489 INFO  msedge-desktop-7d2d9174 test finished {"scope":"msedge-desktop-7d2d9174","durationMs":790,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-3988c-rently-in-isolated-contexts-msedge-desktop/logs/msedge-desktop-7d2d9174-2026-11-06T02-49-28-699Z.log"}

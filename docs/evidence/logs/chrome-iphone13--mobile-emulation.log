@@ -1,0 +1,15 @@
+02:49:18.588 INFO  chrome-iphone13-b093ba3f logger initialised for "chrome-iphone13-b093ba3f"
+02:49:18.588 INFO  chrome-iphone13-b093ba3f storage state accepted {"user":"userA","path":"/home/user/workspace/.auth/userA.json","cookies":1,"origins":0}
+02:49:19.002 INFO  chrome-iphone13-b093ba3f browser context created {"user":"userA","reusedState":true,"statePath":"/home/user/workspace/.auth/userA.json"}
+02:49:19.052 INFO  chrome-iphone13-b093ba3f device profile verified {"project":"chrome-iphone13","viewport":{"width":390,"height":664},"touch":true}
+02:49:19.052 INFO  chrome-iphone13-b093ba3f opening job search {"url":"/jobs/"}
+02:49:19.123 INFO  chrome-iphone13-b093ba3f results rendered {"count":4,"url":"http://127.0.0.1:4321/jobs/"}
+02:49:19.124 INFO  chrome-iphone13-b093ba3f searching jobs {"keyword":"QA Automation Engineer"}
+02:49:19.416 INFO  chrome-iphone13-b093ba3f results rendered {"count":1,"url":"http://127.0.0.1:4321/jobs?q=QA+Automation+Engineer"}
+02:49:19.435 INFO  chrome-iphone13-b093ba3f job cards parsed {"count":1,"easyApply":1}
+02:49:19.436 INFO  chrome-iphone13-b093ba3f opening job {"title":"Senior QA Automation Engineer"}
+02:49:19.530 INFO  chrome-iphone13-b093ba3f job detail loaded {"title":"Senior QA Automation Engineer","url":"http://127.0.0.1:4321/jobs/view/1001"}
+02:49:19.540 INFO  chrome-iphone13-b093ba3f clicking Easy Apply {"title":"Senior QA Automation Engineer"}
+02:49:19.634 INFO  chrome-iphone13-b093ba3f Easy Apply modal opened {"header":"Apply to Acme Cloud"}
+02:49:20.210 INFO  chrome-iphone13-b093ba3f screenshot captured: artifacts/evidence/chrome-iphone13/mock-mobile-emulation-applies-the-device-profile-and-still-o/01-mobile-easy-apply-form.png {"url":"http://127.0.0.1:4321/jobs/view/1001","title":"Senior QA Automation Engineer | LinkedIn (fixture)"}
+02:49:20.261 INFO  chrome-iphone13-b093ba3f test finished {"scope":"chrome-iphone13-b093ba3f","durationMs":1673,"steps":[],"log":"/home/user/workspace/artifacts/test-results/mock-mobile-emulation--moc-405f5-l-opens-the-Easy-Apply-form-chrome-iphone13/logs/chrome-iphone13-b093ba3f-2026-11-06T02-49-18-588Z.log"}

@@ -1,0 +1,2 @@
+02:49:25.974 INFO  chrome-galaxy-s9-7d2d9174 logger initialised for "chrome-galaxy-s9-7d2d9174"
+02:49:25.976 INFO  chrome-galaxy-s9-7d2d9174 test finished {"scope":"chrome-galaxy-s9-7d2d9174","durationMs":2,"steps":[],"log":"/home/user/workspace/artifacts/test-results/session-multi-user--mock-m-8618a-ionable-SessionExpiredError-chrome-galaxy-s9/logs/chrome-galaxy-s9-7d2d9174-2026-11-06T02-49-25-974Z.log"}
